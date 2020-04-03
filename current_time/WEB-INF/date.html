@@ -1,0 +1,26 @@
+<%@ page contentType="text/html;charset=euc-kr" %>
+<%@ page import="java.util.*"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%
+  Date date= new Date();
+  SimpleDateFormat d1=new SimpleDateFormat("a");
+  SimpleDateFormat month=new SimpleDateFormat("MM"); 
+  SimpleDateFormat day=new SimpleDateFormat("dd");
+  String jspf_var="좋은시간되세요.";
+  String jspf_value="";
+  if("12".compareTo(month.format(date))==0&&"25".compareTo(day.format(date))==0){
+    jspf_value="Merry Christmas!";
+  }
+  else if ("01".compareTo(month.format(date))==0&&"01".compareTo(day.format(date))==0){
+   jspf_value="Happy new Year~!!";
+  }
+  if("오전".compareTo(d1.format(date))==0){
+    jspf_var="Good Morning~";
+  }
+  else{
+    jspf_var="Good Afternoon";
+  }
+  
+  
+%>
+<%= start+new Date()+d1.format(date)+end %>
