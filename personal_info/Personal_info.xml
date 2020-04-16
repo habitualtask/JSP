@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type " content="text/html;charset=euc-kr">
+    <title>회원가입</title>
+</head>
+<body>
+  개인정보를 입력하세요.
+  <form action=Agreement.jsp method=post>
+  아이디:<INPUT TYPE=TEXT NAME=ID><BR>
+  패스워드:<INPUT TYPE=PASSWORD NAME=PASSWORD><BR>
+  이름:<INPUT TYPE=TEXT NAME=NAME><BR>
+  <INPUT TYPE=SUBMIT VALUE='확인'>
+  </form>
+  </body>
+  </html>
