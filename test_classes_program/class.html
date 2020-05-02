@@ -1,0 +1,56 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+    <title>Request Test Form</title>
+  </head>
+  <body>
+  <center>
+  <h2>수강신청시스템</h2>
+  <hr>
+   <form action="class.jsp" method="get">
+   <table border=1 cellspacing="1" cellpadding="5">
+   <tr><td>학과</td>
+   <td>
+   <select name="major">
+      <option>컴퓨터공학전공</option>
+      <option>정보통신융합공학</option>
+      <option>정보보호학전공</option>
+      <option>IT공학부</option>
+    </select>
+    </td></tr>
+    <tr><td>학년</td>
+    <td>
+    <input type="radio" name="grade" value="1">1</input>
+    <input type="radio" name="grade" value="2">2</input>
+    <input type="radio" name="grade" value="3">3</input>
+    <input type="radio" name="grade" value="4">4</input>
+    </td>
+    </tr>
+    <tr><td>유형</td>
+   <td>
+   <select name="choose">
+      <option>전필</option>
+      <option>전선</option>
+    </select>
+    </td></tr>
+    <tr><td>교과목코드</td><td><input type="text" size="10" name="code"></td></tr>
+   <tr><td>교과목명</td><td><input type="text" size="10" name="codename"></td></tr>
+   <tr><td>학점</td>
+   <td>
+   <select name="num">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+    </td></tr>
+    <tr>
+    <td colspan="2" align="center">
+    <input type="submit" value="확인"><input type="reset" value="취소"></td>
+    </tr>
+    </table>
+    </form>
+    </body>
+    </html>
